@@ -37,7 +37,7 @@ export default {
             emphasis: {
               show: false,
             },
-            show: false,  //地图文字显示
+            show: false, //地图文字显示
           },
 
           itemStyle: {
@@ -155,11 +155,11 @@ export default {
             coordinateSystem: "geo",
             data: [
               {
-                name: "三炮2",
+                name: "胖虎胖虎",
                 value: [115.89, 28.68],
               },
               {
-                name: "三炮2",
+                name: "胖虎胖虎",
                 value: [121.48, 31.22],
               },
               {
