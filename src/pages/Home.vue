@@ -155,19 +155,19 @@ export default {
             coordinateSystem: "geo",
             data: [
               {
-                name: "江西",
+                name: "三炮",
                 value: [115.89, 28.68],
               },
               {
-                name: "上海",
+                name: "三炮",
                 value: [121.48, 31.22],
               },
               {
-                name: "天津",
+                name: "三炮",
                 value: [117.2, 39.13],
               },
               {
-                name: "四川",
+                name: "三炮",
                 value: [104.06, 30.67],
               },
               {
