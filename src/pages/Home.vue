@@ -155,11 +155,11 @@ export default {
             coordinateSystem: "geo",
             data: [
               {
-                name: "胖虎胖虎",
+                name: "大肥猪",
                 value: [115.89, 28.68],
               },
               {
-                name: "胖虎胖虎",
+                name: "大母猪",
                 value: [121.48, 31.22],
               },
               {
