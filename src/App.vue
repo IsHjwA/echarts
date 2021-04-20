@@ -1,6 +1,5 @@
 <template>
   <div class="app">
-
     <!-- 路由的视图容器 -->
     <!-- 它的作用就是告诉vue在哪里显示路由匹配的组件 -->
     <!-- 用于显示匹配成功的页面组件 -->
@@ -20,10 +19,12 @@
       <!-- active-class用于指定高亮样式的类名 -->
 
       <!-- 声明式导航 -->
-      <router-link :to='{name: "home"}' tag='span' active-class='on'>首页</router-link>
-      <router-link to='/find' tag='span' active-class='on'>发现</router-link>
-      <router-link to='/cart' tag='span' active-class='on'>购物车</router-link>
-      <router-link to='/user' tag='span' active-class='on'>我的</router-link>
+      <router-link :to="{ name: 'home' }" tag="span" active-class="on"
+        >三炮啊</router-link
+      >
+      <router-link to="/find" tag="span" active-class="on">发现</router-link>
+      <router-link to="/cart" tag="span" active-class="on">购物车</router-link>
+      <router-link to="/user" tag="span" active-class="on">我的</router-link>
 
       <!-- 编程式导航 -->
       <!-- 底部tab导航，不建议使用编程式导航来实现，因为this.$router.push()不支持向路由栈中推入相同的路由 -->
@@ -31,13 +32,11 @@
       <span @click='skip(2)'>发现</span>
       <span @click='skip(3)'>购物车</span>
       <span @click='skip(4)'>我的</span> -->
-
     </div>
   </div>
 </template>
 
 <script>
-
 // 引入、导入
 // import HelloWorld from './components/HelloWorld.vue'
 // import World from './components/World.vue'
@@ -45,21 +44,21 @@
 // import fetch from '@/utils/fetch'
 
 export default {
-  name: 'App',
+  name: "App",
   // 监听器，可以监听路由的变化
   watch: {
-    $route: function(to, from) {
-      console.log('watch',to, from)
-    }
+    $route: function (to, from) {
+      console.log("watch", to, from);
+    },
   },
   components: {
     // HelloWorld,
     // World
   },
   mounted() {
-    console.log('路由', this.$route)
-    console.log('路由', this.$router)
-    console.log('vuex', this.$store)
+    console.log("路由", this.$route);
+    console.log("路由", this.$router);
+    console.log("vuex", this.$store);
 
     // 调用cnode接口
     // fetch({
@@ -71,32 +70,32 @@ export default {
     // })
 
     let params = {
-      ct:24,
-      qqmusic_ver:1298,
-      new_json:1,
-      remoteplace:'txt.yqq.song',
+      ct: 24,
+      qqmusic_ver: 1298,
+      new_json: 1,
+      remoteplace: "txt.yqq.song",
       searchid: 54616638128860322,
-      t:0,
-      aggr:1,
-      cr:1,
-      catZhida:1,
-      lossless:0,
-      flag_qc:0,
-      p:1,
-      n:10,
-      w:'%E5%91%A8%E6%9D%B0%E4%BC%A6',
-      g_tk_new_20200303:5381,
-      g_tk:5381,
-      loginUin:0,
-      hostUin:0,
-      format:'json',
-      inCharset:'utf8',
-      outCharset:'utf-8',
-      notice:0,
-      platform:'yqq.json',
-      needNewCode:0
-    }
-    console.log(params)
+      t: 0,
+      aggr: 1,
+      cr: 1,
+      catZhida: 1,
+      lossless: 0,
+      flag_qc: 0,
+      p: 1,
+      n: 10,
+      w: "%E5%91%A8%E6%9D%B0%E4%BC%A6",
+      g_tk_new_20200303: 5381,
+      g_tk: 5381,
+      loginUin: 0,
+      hostUin: 0,
+      format: "json",
+      inCharset: "utf8",
+      outCharset: "utf-8",
+      notice: 0,
+      platform: "yqq.json",
+      needNewCode: 0,
+    };
+    console.log(params);
 
     // 调用QQ音乐接口
     // fetch({
@@ -110,7 +109,6 @@ export default {
     // }).finally(()=>{
     //   console.log('无论成功或失败，我都会被打印出来')
     // })
-
   },
   methods: {
     // this.$route 中记录当前url的各种匹配关系
@@ -140,12 +138,13 @@ export default {
     //     default:
     //   }
     // }
-  }
-}
+  },
+};
 </script>
 
 <style>
-html, body {
+html,
+body {
   padding: 0;
   margin: 0;
   width: 100%;
