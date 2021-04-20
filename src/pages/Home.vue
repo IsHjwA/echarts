@@ -155,19 +155,19 @@ export default {
             coordinateSystem: "geo",
             data: [
               {
-                name: "三炮",
+                name: "三炮2",
                 value: [115.89, 28.68],
               },
               {
-                name: "三炮",
+                name: "三炮2",
                 value: [121.48, 31.22],
               },
               {
-                name: "三炮",
+                name: "三炮2",
                 value: [117.2, 39.13],
               },
               {
-                name: "三炮",
+                name: "三炮2",
                 value: [104.06, 30.67],
               },
               {
